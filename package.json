@@ -1,0 +1,32 @@
+{
+  "name": "@crosstabs/minimatch-compat",
+  "version": "1.0.0",
+  "description": "minimatch 3 call shape for the ESLint toolchain, backed by patched minimatch 11.",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/crosstabs/minimatch-compat.git"
+  },
+  "main": "index.cjs",
+  "exports": {
+    ".": {
+      "require": "./index.cjs",
+      "import": "./index.cjs",
+      "default": "./index.cjs"
+    },
+    "./package.json": "./package.json"
+  },
+  "files": [
+    "index.cjs",
+    "README.md",
+    "LICENSE"
+  ],
+  "dependencies": {
+    "minimatch": "11.0.3"
+  },
+  "sideEffects": false,
+  "engines": {
+    "node": ">=20"
+  },
+  "private": true
+}
