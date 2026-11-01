@@ -2,7 +2,9 @@
 
 // minimatch 11 attaches filter, makeRe, match, Minimatch, GLOBSTAR, sep,
 // defaults, braceExpand, escape and unescape to the function itself.
-const { minimatch } = require("minimatch");
+// Installed under the name "minimatch", so the patched copy is aliased to
+// keep require() from resolving back to this file.
+const { minimatch } = require("patched-minimatch");
 
 module.exports = minimatch;
 module.exports.minimatch = minimatch;

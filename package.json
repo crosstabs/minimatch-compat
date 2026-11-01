@@ -1,6 +1,6 @@
 {
   "name": "@crosstabs/minimatch-compat",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "minimatch 3 call shape for the ESLint toolchain, backed by patched minimatch 11.",
   "license": "MIT",
   "repository": {
@@ -22,7 +22,7 @@
     "LICENSE"
   ],
   "dependencies": {
-    "minimatch": "11.0.3"
+    "patched-minimatch": "npm:minimatch@11.0.3"
   },
   "sideEffects": false,
   "engines": {
